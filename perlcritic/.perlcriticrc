@@ -1,0 +1,14 @@
+severity = stern
+theme    = bugs || complexity || core || cosmetic || maintenance || pbp || performance || portability || readability || security || tests || unicode
+verbose  = %f\n\t[%p] %m at line %l, near '%r'. (Severity: %s)\n
+
+[Subroutines::RequireFinalReturn]
+severity = brutal
+
+[TestingAndDebugging::RequireUseStrict]
+equivalent_modules = strictures DBIx::Class::Candy Mojo::Base
+
+[TestingAndDebugging::RequireUseWarnings]
+equivalent_modules = strictures DBIx::Class::Candy Mojo::Base
+
+[-ValuesAndExpressions::ProhibitConstantPragma]
